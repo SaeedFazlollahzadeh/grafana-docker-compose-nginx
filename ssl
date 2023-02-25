@@ -1,0 +1,5 @@
+certbot certonly --dry-run --webroot -w /home/grafana-docker-compose-nginx/ -d traefik.yourdomain.com --agree-tos --register-unsafely-without-email
+certbot certonly --dry-run --webroot -w /home/grafana-docker-compose-nginx/ -d prometheus.yourdomain.com --agree-tos --register-unsafely-without-email
+certbot certonly --dry-run --webroot -w /home/grafana-docker-compose-nginx/ -d grafana.yourdomain.com --agree-tos --register-unsafely-without-email
+certbot certonly --dry-run --webroot -w /home/grafana-docker-compose-nginx/ -d alertmanager.yourdomain.com --agree-tos --register-unsafely-without-email
+certbot certonly --dry-run --webroot -w /home/grafana-docker-compose-nginx/ -d nodeexporter.yourdomain.com --agree-tos --register-unsafely-without-email
